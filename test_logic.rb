@@ -8,7 +8,7 @@ class Test
     end
 
     @user_score = 0
-    answers_count # initialize starting method which will display questions and collecting answers
+    starting_test # initialize starting method which will display questions and collecting answers
   end
 
   # method getter will return string with score for result printer
@@ -19,7 +19,7 @@ class Test
   # The method is private, to be called only once after object is created
   private
 
-  def answers_count
+  def starting_test
     @questions.each do |item| # Puts questions
       puts item
       input = nil
@@ -28,7 +28,6 @@ class Test
         puts "\nВведите: да, нет или иногда"
         input = STDIN.gets.chomp.downcase
       end
-
 
       if input == "да" # Count user score
         @user_score += 2

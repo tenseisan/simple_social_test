@@ -1,5 +1,4 @@
 class TestResult
-
   def initialize
     current_path = File.dirname(__FILE__)
     results_path = current_path + "/data/results.txt"
@@ -20,8 +19,7 @@ class TestResult
     when 14..18 then puts @results[3]
     when 9..13 then puts @results[4]
     when 4..8 then puts @results[5]
-    else
-      puts @results[6]
+    else puts @results[6]
     end
   end
 end
