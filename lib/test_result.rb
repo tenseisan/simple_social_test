@@ -1,18 +1,15 @@
 class TestResult
   def initialize
     current_path = File.dirname(__FILE__)
-    results_path = current_path + "/data/results.txt"
+    results_path = current_path + "/../data/results.txt"
 
-    File.open(results_path) do |file| # Read file with test results
-    @results = file.readlines
-    end
+    @results = File.readlines(results_path)
   end
 
-  # shows result from array
   def print_result(my_test)
     puts "Результат теста:"
 
-    case my_test.result
+    case my_test.user_score
     when 30..32 then puts @results[0]
     when 25..29 then puts @results[1]
     when 19..24 then puts @results[2]
