@@ -1,13 +1,14 @@
+# Result printer
 class TestResult
   def initialize
     current_path = File.dirname(__FILE__)
-    results_path = current_path + "/../data/results.txt"
+    results_path = current_path + '/../data/results.txt'
 
     @results = File.readlines(results_path)
   end
 
   def print_result(my_test)
-    puts "Результат теста:"
+    puts 'Результат теста:'
 
     case my_test.user_score
     when 30..32 then puts @results[0]

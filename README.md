@@ -5,10 +5,12 @@
 ### Installing
 
 ```
-Установите ruby 2.4.1 or higher
+sudo apt-get install ruby-full
 ```
 ## Running
-1. Запустите скрипт из папки скрипта (см. видео ниже)
+```
+ruby test.rb
+```
 ![how to run](https://i.imgur.com/1DoWMuj.gif)
 ## Authors
 

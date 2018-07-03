@@ -1,9 +1,10 @@
+# Test logic
 class Test
   attr_reader :user_score
 
   def initialize
     current_path = File.dirname(__FILE__)
-    questons_path = current_path + "/../data/questions.txt"
+    questons_path = current_path + '/../data/questions.txt'
 
     File.open(questons_path) do |file|
       @questions = file.readlines
@@ -14,14 +15,14 @@ class Test
   def collecting_answers
     input = nil
 
-    until input == "да" || input == "нет" || input == "иногда"
-      puts "\nВведите: да, нет или иногда"
+    until input == 'да' || input == 'нет' || input == 'иногда'
+      puts 'Введите: да, нет или иногда'
       input = STDIN.gets.chomp.downcase
     end
 
-    if input == "да"
+    if input == 'да'
       @user_score += 2
-    elsif input == "иногда"
+    elsif input == 'иногда'
       @user_score += 1
     end
   end
@@ -32,4 +33,4 @@ class Test
       collecting_answers
     end
   end
- end
+end
