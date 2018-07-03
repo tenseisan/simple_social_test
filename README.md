@@ -11,7 +11,7 @@ sudo apt-get install ruby-full
 ```
 ruby test.rb
 ```
+## Demo
 ![how to run](https://i.imgur.com/1DoWMuj.gif)
 ## Authors
-
 * **Dmitriy Malyshev** - *Course Work* - [Tenseisan](https://github.com/tenseisan)
